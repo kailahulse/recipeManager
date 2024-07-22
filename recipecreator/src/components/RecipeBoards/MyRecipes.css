@@ -1,0 +1,30 @@
+.styleButton {
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+    margin-right: 100px;
+    align-items: center;
+
+}
+
+.styleButton:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+}
+  
+.styleButton:active {
+    transform: translateY(2px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

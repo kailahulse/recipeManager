@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import useToken from './useToken'; // Assuming useToken is defined in another file in the src folder
-import Login from './components/Login/Login.js'; // Correct path to Login.js
+import Login from './components/Login/Login'; // Correct path to Login.js
 import Dashboard from './components/Dashboard/Dashboard.js'; // Correct path to Dashboard.js
-import MyRecipes from './components/Dashboard/MyRecipes.js'; // Correct path to MyRecipes.js
+import MyRecipes from './components/RecipeBoards/MyRecipes.js'; // Correct path to MyRecipes.js
+import MyFolders from './components/RecipeBoards/CreateFolder.js'; // Correct path to MyRecipes.js
 
 function App() {
   const { token, setToken } = useToken();
@@ -21,7 +22,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           {/* <Route path="RecipeBoards" element={<RecipeBoards />} /> */}
-          <Route path="Dashboard/MyRecipes.js" element={<MyRecipes />} /> {/* Define route for MyRecipes */}
+          <Route path="/my-recipes" element={<MyRecipes />} /> {/* Define route for MyRecipes */}
+          <Route path="/my-folders" element={<MyFolders />} /> {/* Define route for MyRecipes */}
+          <Route path="/home" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>

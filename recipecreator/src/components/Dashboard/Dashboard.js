@@ -6,20 +6,25 @@ export default function Dashboard() {
   const navigate = useNavigate();
 
   const navigateToRecipes = () => {
-    navigate('/MyRecipes.js'); // Use the correct path
+    navigate('/my-recipes'); // Use the correct path
+    console.log("Navigate to MyRecipes");
+  };
+
+  const navigateToFolder = () => {
+    navigate('/my-folders'); // Use the correct path
     console.log("Navigate to MyRecipes");
   };
 
   const handleClick = () => {
-    navigate('/RecipeBoards/MyRecipes'); // Use the correct path
-    console.log("Navigate to MyRecipes");
+    // navigate('/RecipeBoards/MyRecipes'); // Use the correct path
+    // console.log("Navigate to MyRecipes");
   };
 
   return (
     <div>
-      <h2>What would you like to do?</h2>
+      <h2>Welcome to Your Recipe board please choose an option below!</h2>
       <div className="container">
-        <button className="styleButtons" onClick={handleClick}>
+        <button className="styleButtons" onClick={navigateToFolder}>
           Create a new recipe folder
         </button>{' '}
         <button className="styleButtons" onClick={navigateToRecipes}>
