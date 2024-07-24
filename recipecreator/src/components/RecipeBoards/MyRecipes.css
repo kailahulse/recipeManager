@@ -28,3 +28,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.boxStyle {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.centerText {
+    display: flex;
+    justify-content: center;
+    margin-right: 500px;
+}
